@@ -35,19 +35,19 @@ function AddUser(props) {
         <div className="card bg-dark p-3 mb-3">
             <form onSubmit={submitHandler}>
                 <div className="mb-3">
-                    <input type="text" className="form-control" placeholder="Image" id="image" onChange={imageChangeHandler} />
+                    <input type="text" className="form-control" placeholder="Image" id="image" onChange={imageChangeHandler} required />
                 </div>
                 <div className="mb-3">
-                    <input type="text" className="form-control" placeholder="Name" id="name" onChange={nameChangeHandler} />
+                    <input type="text" className="form-control" placeholder="Name" id="name" onChange={nameChangeHandler} required />
                 </div>
                 <div className="mb-3">
-                    <input type="text" className="form-control" placeholder="Phone" id="phone" onChange={phoneChangeHandler} />
+                    <input type="text" className="form-control" placeholder="Phone" id="phone" onChange={phoneChangeHandler} required />
                 </div>
                 <div className="mb-3">
-                    <input type="text" className="form-control" placeholder="Cell" id="cell" onChange={cellChangeHandler} />
+                    <input type="text" className="form-control" placeholder="Cell" id="cell" onChange={cellChangeHandler} required />
                 </div>
                 <div className="mb-3">
-                    <input type="text" className="form-control" placeholder="Uuid" id="uuid" onChange={uuidChangeHandler} />
+                    <input type="text" className="form-control" placeholder="Uuid" id="uuid" onChange={uuidChangeHandler} required />
                 </div>
                 <button type="submit" className="btn float-end btn-primary btn sm">Submit</button>
             </form>
